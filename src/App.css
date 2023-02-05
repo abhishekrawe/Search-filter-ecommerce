@@ -29,7 +29,7 @@
 
 .filterCat {
     position: absolute;
-    top: 16%;
+    top: 15%;
     left: 11%;
     z-index: 999;
 }
@@ -75,7 +75,7 @@
     }
 
     .filterCat{
-        top: 11%;
+        top: 9%;
         left: 5%;
     }
 }

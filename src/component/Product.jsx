@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
-function Product({ onFilter }) {
+function Product({ onFilter, onSearch }) {
     const [selects, setSelects] = useState();
+    const [input, setInput] = useState("");
+
     useEffect(() => {
         onFilter(selects);
     }, [selects])
+    useEffect(() => {
+        onSearch(input);
+    }, [input])
     return (
         <div className='hero'>
             <div className='filterCat'>
@@ -25,18 +30,17 @@ function Product({ onFilter }) {
                             </button>
                             <form className="container-fluid w-50">
                                 <div className="input-group">
-                                    <input type="text" class="form-control" placeholder="Search this blog" aria-label="Username" aria-describedby="basic-addon1" />
+                                    <input value={input} onChange={e => setInput(e.target.value)} type="text" class="form-control" placeholder="Search this blog" aria-label="Username" aria-describedby="basic-addon1" />
                                 </div>
                             </form>
                             <button className="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 🏳️‍🌈 English
                             </button>
-                            
                             <button className="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               <h5 className='cart'>🛒  CART</h5>
+                                <h5 className='cart'>🛒  CART</h5>
                             </button>
                             <button className="btn me-3 login" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              <h5 className='login'>🛒 LOGIN</h5>
+                                <h5 className='login'>🛒 LOGIN</h5>
                             </button>
                         </nav>
                     </div>
@@ -46,10 +50,10 @@ function Product({ onFilter }) {
                 <div className="card-img-overlay d-flex flex-column justify-content-center">
                     <div className='container-main mb-5'>
                         <div className='header'>
-                        <h5 className="card-title display-3 fw-bolder mb-0">GET START</h5>
-                        <h5 className="card-title display-3 fw-bolder mb-5">YOUR FAVRIOT SHOPING</h5>
-                        <button type="button" className="btn btn-dark fw-bold ml-1">  BUY NOW  </button>
-                        </div> 
+                            <h5 className="card-title display-3 fw-bolder mb-0">GET START</h5>
+                            <h5 className="card-title display-3 fw-bolder mb-5">YOUR FAVRIOT SHOPING</h5>
+                            <button type="button" className="btn btn-dark fw-bold ml-1">  BUY NOW  </button>
+                        </div>
                     </div>
                 </div>
             </div>

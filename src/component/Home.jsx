@@ -15,6 +15,11 @@ function Home() {
         getProducts();
     }, []);
 
+    const searchProduct = (val) => {
+          const res = filter.filter(elem => elem.title.toLowerCase().includes( val.toLowerCase()))
+          setFilter(res);
+    }
+
     const filterProduct = (cat) => {
         if (cat === "") {
             setFilter(data)
@@ -61,7 +66,7 @@ function Home() {
     return (
 
         <>
-            <Product onFilter={filterProduct} />
+            <Product onFilter={filterProduct}  onSearch={searchProduct}/>
             <div className='body'>
                 <div className='container my-5'>
                     <div className='row'>

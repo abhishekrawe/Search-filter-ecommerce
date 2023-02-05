@@ -29,12 +29,17 @@ https://user-images.githubusercontent.com/65603830/216839360-ee378249-515f-4f74-
 
 4️⃣.Responsive
 
-
-### `mobile view `
-![image](https://user-images.githubusercontent.com/65603830/216839734-cfa73c09-c518-4441-a3f2-de77be73cd4f.png)
-
-### `tab view `
-![image](https://user-images.githubusercontent.com/65603830/216839767-bc921c44-9b40-40a9-8517-a6039998d2df.png)
+<table>
+<tr>
+     <td>Mobile View </td>
+     <td>Tab View </td>
+ </tr>
+ <tr>
+    <td><img src="https://user-images.githubusercontent.com/65603830/216839734-cfa73c09-c518-4441-a3f2-de77be73cd4f.png" width=430 height=530></td>
+    <td><img src="https://user-images.githubusercontent.com/65603830/216839767-bc921c44-9b40-40a9-8517-a6039998d2df.png" width=670 height=530></td>
+</tr>
+</table>  
+  
 
 
 

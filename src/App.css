@@ -36,6 +36,7 @@
 
 .input-group {
     left: 93px;
+    z-index: 999;
 }
 
 .cart {

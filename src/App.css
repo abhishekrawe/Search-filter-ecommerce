@@ -73,6 +73,11 @@
         bottom: -5px;
         width: 100%;
     }
+
+    .filterCat{
+        top: 11%;
+        left: 5%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 979px) {
